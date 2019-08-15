@@ -1,0 +1,21 @@
+{
+  "name": "mern_stack",
+  "version": "1.0.0",
+  "description": "Simple Mern App",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\" ",
+    "install-client": "npm install --prefix client",
+    "install-server": "npm install",
+    "client": "npm start --prefix client",
+    "server": "nodemon index"
+  },
+  "author": "Piyush Garg",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  }
+}
